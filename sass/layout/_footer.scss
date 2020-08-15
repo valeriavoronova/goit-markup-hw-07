@@ -26,13 +26,13 @@
     margin-right: 94px;
 }
 .bot-logo{
-    font-family: var(--logo-font);
+    font-family: $logo-font;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--main-header-color);
+    color: $main-header-color;
     text-decoration: none;
     
 
@@ -48,7 +48,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--main-header-color);
+    color: $main-header-color;
     text-decoration: none;
     
 }
@@ -66,7 +66,7 @@
     text-decoration: none;
     letter-spacing: 0.03em;
 
-    color: var(--mail-phone-bot-color);
+    color: $mail-phone-bot-color;
 }
 
 b{
@@ -76,7 +76,7 @@ b{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-header-color);
+    color: $main-header-color;
     
 }
 
@@ -98,7 +98,7 @@ b{
 
 .social-link-bot:focus,
 .social-link-bot:hover{
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 
 
@@ -122,7 +122,7 @@ footer{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-header-color);
+    color: $main-header-color;
     margin-bottom: 20px;
 }
 
@@ -154,8 +154,8 @@ footer{
     font-size: 16px;
     line-height: 1.87;  
     letter-spacing: 0.06em;
-    color: var(--main-header-color);
-    background-color: var(--accent-color);
+    color: $main-header-color;
+    background-color: $accent-color;
     border-radius: 4px;
     border: 0ex;    
 }
