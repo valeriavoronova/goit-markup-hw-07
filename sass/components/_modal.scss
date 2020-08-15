@@ -63,13 +63,9 @@
 
     &:focus::placeholder{
         color: $accent-color;   
-    }
-    
+    }    
  }
     
-
-
-
 .modal-form-option-label{
     display: flex;
     align-items: center;
@@ -122,8 +118,8 @@
     border-radius: 2px;
 }
 
-.modal-form-input,
-.modal-form-message{
+.modal-form-message,
+.modal-form-input{
     display: block;
     width: 100%;
     font-size: 14px;
@@ -132,20 +128,13 @@
     border: solid 1px rgba(33, 33, 33, 0.2);
     color: $black-colour;
     border-radius: 4px;
-    
+
+    &:not(:placeholder-shown),
+    &:focus{
+        outline: none;
+        border-color: $accent-color;    
+    }    
 }
-
-
-
-.modal-form-input:not(:placeholder-shown),
-.modal-form-message:not(:placeholder-shown),
-.modal-form-input:focus,
-.modal-form-message:focus{
-    outline: none;
-    border-color: $accent-color;
-    
-}
-
 
 .modal-form-label{
     position: absolute;

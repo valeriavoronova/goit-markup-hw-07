@@ -35,12 +35,12 @@
     color: $main-header-color;
     text-decoration: none;
     
-
 }
 
 .footer-adress{
     margin-top: 20px;
 }
+
 .address{
    
     font-style: normal;
@@ -94,17 +94,11 @@ b{
 .social-link-bot{
     background-color: rgba(255, 255, 255, 0.1);
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover{
+        background-color: $accent-color;
+    }
 }
-
-.social-link-bot:focus,
-.social-link-bot:hover{
-    background-color: $accent-color;
-}
-
-
-
-
-
 
 footer{
     background-color: #2F303A;
@@ -160,6 +154,8 @@ footer{
     border: 0ex;    
 }
 
-.foot-button span{
-    margin-right: 10px;
+.foot-button{
+     span{
+        margin-right: 10px;
+     }
 }
