@@ -1,54 +1,62 @@
 .navigation{
     display: flex;
-    align-items: center;
-  
+    align-items: center;  
 }
+
+.header{
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+}
+
 .list-adress-link{
     display: flex;
-  
-}
-
-
-
-
-
-.adress-item{
+        .adress-item{
     
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.42;
-    letter-spacing: 0.02em;
-    color: $p-text-color;
-    text-decoration: none;
-    list-style: none;    
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.42;
+        letter-spacing: 0.02em;
+        color: $p-text-color;
+        text-decoration: none;
+        list-style: none; 
+        fill: $p-text-color;  
+    
+            svg{
+                margin-right: 10px;
+            }
+
+            &.adress-item:hover,
+            &.adress-item:focus{
+                fill: $accent-color;
+                color: $accent-color;
+            }
+        }  
 }
 
 .adress-link{
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adress-item svg{
-    margin-right: 10px;
-    
-}
-
-.adress-item:hover,
-.adress-item:focus,
-.adress-link:hover,
-.adress-link:focus{
-    --color2: $accent-color;
-    color: $accent-color;
-}
-
-.adress-link:not(:last-child){
-    margin-right: 30px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        &:hover,
+        &:focus{
+            fill: $accent-color;
+            color: $accent-color;
+        }    
 }
 
 .header-nav-link{
     padding-bottom: 32px;
     padding-top: 32px;
+
+    &:not(:last-child){
+        margin-right: 50px;
+    }
 
 }
     
@@ -56,9 +64,6 @@
     display: flex;
     margin-left: 85px;
     padding-left: 0px;
-}
-.header-nav-link:not(:last-child){
-    margin-right: 50px;
 }
 
 .header-nav-link-active{
@@ -72,22 +77,14 @@
     display: block;
     content: "";
     width: 100%;
-    height: 4px;
-    
+    height: 4px;    
     background: $accent-color;
     border-radius: 2px;
 }
 
-.header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
 
 
 
-/*шапка*/
 .main-logo{
     font-family: $logo-font;
     color: $black-colour;
@@ -106,42 +103,25 @@
 }
 
 .nav-item-active,
-.nav-item-passive{
-    
-  
+.nav-item-passive{      
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;    
 }
 
 .nav-item-passive{
     color: $bold-title-color;
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+
 }
 
 .nav-item-active{
-    color: $accent-color;
-}
-
-.nav-item-passive:hover,
-.nav-item-passive:focus{
-    color: $accent-color;
-
-}
-
-
-
-.list{
-    list-style: none;
     text-decoration: none;
-}
-
-
-
-.nav-item-active,
-.nav-item-passive,
-.link{
-    text-decoration: none;
+    color: $accent-color;
 }

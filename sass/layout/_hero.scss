@@ -1,7 +1,6 @@
 h1{
     
-    color: $main-header-color;
-   
+    color: $main-header-color;   
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -44,15 +43,9 @@ h1{
     border: hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.order-button:hover,
-.order-button:focus{
-    color: $main-header-color;
-}
-
-.section-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+    &:hover,
+    &:focus{
+        color: $main-header-color;
+    }
+    
 }

@@ -17,43 +17,35 @@
 }
 .features-item{
     width: 270px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+    div{
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #f5f4fa;
+    }
     
 }
-.features-item:not(:last-child){
-    margin-right: 30px;
-}
+
 .features-img-container1{
-    width: 270px;
-    height: 120px;
-    background-image: url(../images/main/features/antenna1.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #f5f4fa;
+    background-image: url(../images/main/features/antenna1.svg);    
 }
-.features-img-container2{
-    width: 270px;
-    height: 120px;
-    background-image: url(../images/main/features/clock1.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #f5f4fa;
+
+.features-img-container2{   
+    background-image: url(../images/main/features/clock1.svg);    
 }
-.features-img-container3{
-    width: 270px;
-    height: 120px;
-    background-image: url(../images/main/features/diagram1.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #f5f4fa;
+
+.features-img-container3{   
+    background-image: url(../images/main/features/diagram1.svg);    
 }
-.features-img-container4{
-    width: 270px;
-    height: 120px;
-    background-image: url(../images/main/features/astronaut1.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #f5f4fa;
+
+.features-img-container4{   
+    background-image: url(../images/main/features/astronaut1.svg);   
 }
+
 .features-img{
     margin: 25px 100px;
     
