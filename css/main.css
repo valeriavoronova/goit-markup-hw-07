@@ -65,6 +65,13 @@ body {
   margin-bottom: 28px;
 }
 
+.modal-form-input-wrapper svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
 .modal-form-input {
   height: 40px;
   width: 100%;
@@ -154,13 +161,6 @@ body {
   border-color: #2196F3;
 }
 
-.modal-form-input-wrapper svg {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-}
-
 .modal-form-label {
   position: absolute;
   top: 50%;
@@ -221,8 +221,7 @@ body {
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: #2196F3;
 }
 
@@ -432,7 +431,6 @@ h1 {
 }
 
 .features-item div {
-  width: 270px;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -488,16 +486,16 @@ h1 {
   color: #212121;
 }
 
+.what-we-do-item {
+  position: relative;
+}
+
 .what-we-do-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .what-we-do-item > img {
   display: block;
-}
-
-.what-we-do-item {
-  position: relative;
 }
 
 .what-we-do-text {
@@ -518,9 +516,8 @@ h1 {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-section {
+  background-color: #f5f4fa;
 }
 
 .team-section > ul {
@@ -531,10 +528,6 @@ h1 {
   padding-top: 94px;
 }
 
-.team-section {
-  background-color: #f5f4fa;
-}
-
 .team-member {
   background-color: #FFFFFF;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -543,6 +536,10 @@ h1 {
 
 .team-member > img {
   margin-bottom: 30px;
+}
+
+.team-member:not(:last-child) {
+  margin-right: 30px;
 }
 
 .flex-list-social-icons {
@@ -563,21 +560,15 @@ h1 {
   background-color: #FFFFFF;
 }
 
-.social-icon-main:hover,
-.social-icon-main:focus {
+.social-icon-main:hover, .social-icon-main:focus {
   background-color: #2196F3;
   fill: #FFFFFF;
-}
-
-.team-member:not(:last-child) {
-  margin-right: 30px;
 }
 
 .spec-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -595,7 +586,6 @@ h1 {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
@@ -629,8 +619,7 @@ h1 {
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-item a:hover,
-.clients-list-item a:focus {
+.clients-list-item a:hover, .clients-list-item a:focus {
   fill: #2196F3;
   border: solid #2196F3 1px;
 }

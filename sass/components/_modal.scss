@@ -35,7 +35,13 @@
 .modal-form-input-wrapper{
     position: relative;
     margin-bottom: 28px;
-    
+    svg{
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        
+        transform: translateY(-50%);
+    }
     
 }
 
@@ -50,18 +56,19 @@
     height: 120px;
     resize: none;
     padding: 16px 12px;
+
+    &::placeholder{
+        padding-bottom: 10px;
+    }
+
+    &:focus::placeholder{
+        color: $accent-color;   
+    }
     
-}
-.modal-form-message::placeholder{
-    padding-bottom: 10px;
-
-}
+ }
+    
 
 
-.modal-form-message:focus::placeholder{
-    color: $accent-color;
-
-}
 
 .modal-form-option-label{
     display: flex;
@@ -92,6 +99,8 @@
     overflow: hidden;
 }
 
+
+
 .modal-form-custom-checkbox{
     display: flex;
     align-items: center;
@@ -101,11 +110,11 @@
     border: solid 1px $black-colour;
     border-radius: 2px;
     margin-right: 7px;
+    
 }
 
 .modal-form-checkbox:checked + .modal-form-custom-checkbox svg{
-      background-color: $accent-color;
-     
+    background-color: $accent-color;
 }
 
 .modal-form-checkbox:checked + .modal-form-custom-checkbox{
@@ -126,6 +135,8 @@
     
 }
 
+
+
 .modal-form-input:not(:placeholder-shown),
 .modal-form-message:not(:placeholder-shown),
 .modal-form-input:focus,
@@ -135,14 +146,6 @@
     
 }
 
-.modal-form-input-wrapper svg{
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    
-    transform: translateY(-50%);
-}
-
 
 .modal-form-label{
     position: absolute;
@@ -150,10 +153,8 @@
     left: 0;
     padding-left: 42px;
     transform: translateY(-50%);
-    font-size: 14px;
-    
-    letter-spacing: 0.01em;
-    
+    font-size: 14px;    
+    letter-spacing: 0.01em;   
     color: $p-text-color;
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -206,12 +207,13 @@
     cursor: pointer;
     outline: transparent;
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{ 
+        fill: $accent-color;
+    }
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus{
-    fill: $accent-color;
-}
+ 
 
 .is-hidden{
     opacity: 0;

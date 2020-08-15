@@ -13,32 +13,32 @@
    
 }
 
-.clients-list-item a{
-    width: 170px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid $decor-color 1px;
-    border-radius: 4px;
-    fill: $decor-color;
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    
+.clients-list-item{
+     a{
+        width: 170px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid $decor-color 1px;
+        border-radius: 4px;
+        fill: $decor-color;
+        transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+
+            fill: $accent-color;
+            border: solid $accent-color 1px;
+        }
+    }
+    &:not(:last-child){
+        margin-right: 30px;
+    }   
 }
 
 
 
-.clients-list-item a:hover,
-.clients-list-item a:focus{
-
-    fill: $accent-color;
-    border: solid $accent-color 1px;
-}
 
 
-
-.clients-list-item:not(:last-child){
-    margin-right: 30px;
-}
 
 
